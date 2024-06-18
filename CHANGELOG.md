@@ -7,10 +7,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 ### Details
-#### Other
+#### Removed
 
-
-- Minor README improvement - ([9da1753](https://github.com/andrewendlinger/test_data/commit/9da17533bde77ec96857a7649734706992282f1b)) - andrewendlinger
+- Commit_parsers no longer has group "Other" as fallback - ([31a035f](https://github.com/andrewendlinger/test_data/commit/31a035fdaff9edeea048b570ba61fcd02d2d3e81)) - andrewendlinger
 
 ## [0.0.1] - 2024-06-18
 ### Details
@@ -23,17 +22,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 #### Changed
 
 - New directory structure - ([17872b3](https://github.com/andrewendlinger/test_data/commit/17872b37809b73d907e66bf6041a36f21195e1d0)) - andrewendlinger
-
-#### Other
-
-
-
-
-- Create first official version: v0.0.1
-
-Changed version number inside readme to v0.0.1
-Next steps are tagging and automatic version bumping by git-cliff for
-the changelog - ([31f9aa6](https://github.com/andrewendlinger/test_data/commit/31f9aa6ac153606227f193f437834fdaaf7be9c3)) - andrewendlinger
 
 [unreleased]: https://github.com/andrewendlinger/hypermri_test_data/compare/v0.0.1..HEAD
 
