@@ -56,7 +56,7 @@ git commit -m "<prefix> message"
 | `remove:`             |  Removed            |
 | `fix:`                |  Fixed              |
 | `change:`             |  Changed            |
-| _other_               |  Other              |
+<!-- | _other_               |  Other              | -->
 
 This format is based on the [Conventional Commits specification](https://www.conventionalcommits.org/en/v1.0.0/). The changelog is generated using [git-cliff](https://git-cliff.org), configured via `./cliff.toml`, and integrated into our GitHub Actions workflow (`.github/workflows/gitcliff.yml`).
 

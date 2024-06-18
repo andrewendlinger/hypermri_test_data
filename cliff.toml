@@ -94,7 +94,7 @@ commit_parsers = [
     { message = "^remove:", group = "Removed" },
     { message = "^fix:", group = "Fixed" },
     { message = "^change:", group = "Changed" },
-    { message = "^.*", group = "Other" },
+    # { message = "^.*", group = "Other" },
 ]
 # protect breaking changes from being skipped due to matching a skipping commit_parser
 protect_breaking_commits = false
