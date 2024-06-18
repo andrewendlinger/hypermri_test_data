@@ -123,4 +123,6 @@ The changelog and version are now automatically updated.
     ❯ git push origin main
     ```
 
-+ Install [git-cliff](https://git-cliff.org).
+Additionally, you did:
+    - install [git-cliff](https://git-cliff.org)
+    - run `git cliff --init`
