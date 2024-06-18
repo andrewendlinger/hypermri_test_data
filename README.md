@@ -33,6 +33,8 @@ The following table details which general study-related files should be kept or 
     ❯ git push
     ```
 
+Please check out section 2.1 for info about correct commit messages!
+
 3. Verify the changelog update:
 
     After 1-2 minutes, pull the changes and check the `CHANGELOG.md` file to ensure the update was logged correctly.
@@ -43,6 +45,10 @@ The following table details which general study-related files should be kept or 
 ### 2.1 Conventional Commits and Changelog Generation
 
 Commit messages should follow these prefixes to categorize changes in the changelog:
+
+```
+git commit -m "<prefix> message"
+```
 
 | Commit Message Prefix |  Changelog Section  |
 |-----------------------|---------------------|
