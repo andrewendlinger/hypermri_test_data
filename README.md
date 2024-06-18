@@ -123,6 +123,12 @@ The changelog and version are now automatically updated.
     ❯ git push origin main
     ```
 
-Additionally, you did:
+Additional `git-cliff` stuff:
     - install [git-cliff](https://git-cliff.org)
     - run `git cliff --init`
+
+Additional GitHub configuration stuff:
+    - Log into Github, go to the repository website and enter the repository settings
+    - Go to "Actions" > "General" > "Workflow permissions"
+    - Tick "Read and write permissions"
+    - Hit "Save"
