@@ -138,3 +138,5 @@ Additional GitHub configuration stuff:
     - Go to "Actions" > "General" > "Workflow permissions"
     - Tick "Read and write permissions"
     - Hit "Save"
+
+Note: This package is a submodule of the hypermri package.
