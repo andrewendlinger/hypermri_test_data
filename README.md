@@ -2,6 +2,10 @@
 
 > _Current Version: v0.0.7_
 
+This repository contains MRI data intended for testing purposes with the _hypermri_ Python package.
+
+The installation is managed automatically by the _hypermri_ package. 
+
 ## 1. Adding Test Data
 
 To add new test data, follow these steps:
