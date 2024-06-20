@@ -49,7 +49,6 @@ jobs:
           # Disable exit-on-error mode:
           # set +e
           git add CHANGELOG.md version.txt
-          git add
           git status
           git commit --verbose -m "Update changelog"
           git status
