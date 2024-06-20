@@ -27,6 +27,21 @@ jobs:
       - name: Print the changelog
         run: cat "${{ steps.git-cliff.outputs.changelog }}"
 
+      - name: Update version file
+        run: |
+          # Get the latest tag
+          latest_tag=$(git describe --tags $(git rev-list --tags --max-count=1))
+          # Get the current version from version.txt
+          current_version=$(cat version.txt)
+          # Check if the latest tag is different from the current version
+          if [ "$latest_tag" != "$current_version" ]; then
+            echo "Changing version.txt from $current_version to $latest_tag"
+            # Write to version.txt file
+            echo "$latest_tag" > version.txt
+          else
+            echo "The latest tag is the same as the current version. No update needed."
+          fi
+
       - name: Commit
         run: |
           git config user.name 'github-actions[bot]'
@@ -34,6 +49,7 @@ jobs:
           # Disable exit-on-error mode:
           # set +e
           git add CHANGELOG.md
+          git add version.txt
           git status
           git commit --verbose -m "Update changelog"
           git status
