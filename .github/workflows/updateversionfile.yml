@@ -5,11 +5,6 @@ on:
     tags:
       - 'v*'  # Only run on tag pushes
 
-# ensures jobs within the same group are not run simultaneously to avoid commit/push clashes
-concurrency:
-  group: versioningandchangelog
-  cancel-in-progress: false
-
 jobs:
   update-version:
     runs-on: ubuntu-latest
@@ -36,7 +31,12 @@ jobs:
       - name: Commit and push version file
         run: |
           git add version.txt
-          git commit -m "Update version.txt to $latest_tag"
-          git push origin HEAD:main  # Adjust branch as necessary
+          git status
+          git commit --verbose -m "Update version.txt to $latest_tag"
+          git status
+          git fetch origin
+          git rebase --strategy-option=theirs origin/main --verbose
+          git push --verbose
+
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

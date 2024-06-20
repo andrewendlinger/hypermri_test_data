@@ -5,11 +5,6 @@ on:
     branches:
       - main
 
-# ensures jobs within the same group are not run simultaneously to avoid commit/push clashes
-concurrency:
-  group: versioningandchangelog
-  cancel-in-progress: false
-
 jobs:
   changelog:
     name: Generate changelog
@@ -37,7 +32,11 @@ jobs:
           git config user.name 'github-actions[bot]'
           git config user.email 'github-actions[bot]@users.noreply.github.com'
           # Disable exit-on-error mode:
-          set +e
+          # set +e
           git add CHANGELOG.md
-          git commit -m "Update changelog"
+          git status
+          git commit --verbose -m "Update changelog"
+          git status
+          git fetch origin
+          git rebase --strategy-option=theirs origin/main --verbose
           git push https://${{ secrets.GITHUB_TOKEN }}@github.com/${GITHUB_REPOSITORY}.git main
