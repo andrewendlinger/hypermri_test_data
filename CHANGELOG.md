@@ -5,60 +5,67 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [Unreleased]
+### Details
+#### Fixed
+
+- Fix in github action, removed empty git add
+
 ## [0.0.8] - 2024-06-20
 ### Details
 #### Added
 
-- README clarifications - ([7e46db3](https://github.com/andrewendlinger/test_data/commit/7e46db37612b44f9c0ac583d015aaed67596bee1)) - andrewendlinger
+- README clarifications
 
 ## [0.0.7] - 2024-06-20
 ### Details
 #### Fixed
 
-- Adding CHANGELOG.md and version.txt in one line - ([89d2df0](https://github.com/andrewendlinger/test_data/commit/89d2df08909ea192c903a0c2ecfbdef129b9bb58)) - andrewendlinger
+- Adding CHANGELOG.md and version.txt in one line
 
 ## [0.0.6] - 2024-06-20
 ### Details
 #### Fixed
 
-- Combined version.txt update and changelog actions to avoid detatched HEADs - ([870c115](https://github.com/andrewendlinger/test_data/commit/870c115457c7ab6c309c7b6959f9a8f71ddddfcb)) - andrewendlinger
+- Combined version.txt update and changelog actions to avoid detatched HEADs
 
 ## [0.0.5] - 2024-06-20
 ### Details
 #### Added
 
-- New github actions commit routine for automatic merging - ([fac632a](https://github.com/andrewendlinger/test_data/commit/fac632afbcb1173631cff880ce8db0fdc9c96cd1)) - andrewendlinger
+- New github actions commit routine for automatic merging
 
 ## [0.0.4] - 2024-06-20
 ### Details
 #### Fixed
 
-- Stop github action jobs form clashing when started simultaneously - ([f228105](https://github.com/andrewendlinger/test_data/commit/f2281052639865154ad143f04a9ed2a2d9c1c691)) - andrewendlinger
+- Stop github action jobs form clashing when started simultaneously
 
 ## [0.0.3] - 2024-06-20
 ### Details
 #### Added
 
-- Version.txt file and corresponding github action - ([7d2acf8](https://github.com/andrewendlinger/test_data/commit/7d2acf8da5d7b39c257bad128385baef193394e0)) - andrewendlinger
+- Version.txt file and corresponding github action
 
 ## [0.0.2] - 2024-06-20
 ### Details
 #### Removed
 
-- Commit_parsers no longer has group "Other" as fallback - ([31a035f](https://github.com/andrewendlinger/test_data/commit/31a035fdaff9edeea048b570ba61fcd02d2d3e81)) - andrewendlinger
+- Commit_parsers no longer has group "Other" as fallback
 
 ## [0.0.1] - 2024-06-18
 ### Details
 #### Added
 
-- First umpireMGE test data, contains 1H, 13C and anatomical ref - ([c27b414](https://github.com/andrewendlinger/test_data/commit/c27b4145f1954f4171829bd95d67d122d1bd1cc3)) - andrewendlinger
+- First umpireMGE test data, contains 1H, 13C and anatomical ref
 
-- Added .cliffignore file - ([52a554c](https://github.com/andrewendlinger/test_data/commit/52a554c27cbd96013e9df5406571cb67574ac174)) - andrewendlinger
+- Added .cliffignore file
 
 #### Changed
 
-- New directory structure - ([17872b3](https://github.com/andrewendlinger/test_data/commit/17872b37809b73d907e66bf6041a36f21195e1d0)) - andrewendlinger
+- New directory structure
 
+[unreleased]: https://github.com/andrewendlinger/hypermri_test_data/compare/v0.0.8..HEAD
 [0.0.8]: https://github.com/andrewendlinger/hypermri_test_data/compare/v0.0.7..v0.0.8
 [0.0.7]: https://github.com/andrewendlinger/hypermri_test_data/compare/v0.0.6..v0.0.7
 [0.0.6]: https://github.com/andrewendlinger/hypermri_test_data/compare/v0.0.5..v0.0.6
