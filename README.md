@@ -1,6 +1,6 @@
 # Test Data for the `hypermri` Package
 
-> _Current Version: v0.0.7_
+> _Current Version: v0.0.8_
 
 This repository contains MRI data intended for testing purposes with the _hypermri_ Python package.
 
