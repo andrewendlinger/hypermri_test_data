@@ -8,7 +8,7 @@ on:
 # ensures jobs within the same group are not run simultaneously to avoid commit/push clashes
 concurrency:
   group: versioningandchangelog
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 jobs:
   changelog:
