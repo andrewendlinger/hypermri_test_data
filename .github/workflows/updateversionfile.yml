@@ -1,0 +1,36 @@
+name: Update Version File
+
+on:
+  push:
+    tags:
+      - 'v*'  # Only run on tag pushes
+
+jobs:
+  update-version:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up Git
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+
+      - name: Update version file
+        run: |
+          # Get the latest tag
+          latest_tag=$(git describe --tags $(git rev-list --tags --max-count=1))
+          # Output the latest tag
+          echo "Current version: $latest_tag"
+          # Write to version.txt file
+          echo "$latest_tag" > version.txt
+
+      - name: Commit and push version file
+        run: |
+          git add version.txt
+          git commit -m "Update version.txt to $latest_tag"
+          git push origin HEAD:main  # Adjust branch as necessary
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
