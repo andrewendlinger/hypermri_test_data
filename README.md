@@ -1,6 +1,6 @@
 # Test Data for the `hypermri` Package
 
-> _Current Version: v0.0.4_
+> _Current Version: v0.0.5_
 
 ## 1. Adding Test Data
 
